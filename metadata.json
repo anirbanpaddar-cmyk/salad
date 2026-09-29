@@ -1,0 +1,6 @@
+{
+  "name": "FRESH SALAD - Healthy Food Restaurant",
+  "description": "প্রিমিয়াম তাজা ও স্বাস্থ্যকর সালাদ রেস্টুরেন্ট - Fresh, wholesome and delicious salads crafted for a healthy lifestyle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

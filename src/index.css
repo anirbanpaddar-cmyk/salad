@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #17251C;
+  --primary: #4F8F3A;
+  --background: #FFFDF5;
+  --card: #FFFFFF;
+  --border: #EAF4E3;
+}
+
+@theme {
+  --font-bengali: 'Hind Siliguri', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  --color-fresh-green: #4F8F3A;
+  --color-dark-green: #183D2B;
+  --color-light-green: #EAF4E3;
+  --color-cream: #FFFDF5;
+  --color-dark-text: #17251C;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  background-color: #FFFDF5;
+  color: #17251C;
+}
+
+.font-bengali {
+  font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Floating Animations for Salads and Food Images */
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.8deg);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 6s ease-in-out infinite;
+}
+
+@keyframes float-salad-a {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float-salad-b {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.6deg);
+  }
+}
+
+@keyframes float-salad-c {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-0.5deg);
+  }
+}
+
+@keyframes float-salad-d {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.animate-float-a {
+  animation: float-salad-a 5.5s ease-in-out infinite;
+}
+
+.animate-float-b {
+  animation: float-salad-b 6.2s ease-in-out 0.7s infinite;
+}
+
+.animate-float-c {
+  animation: float-salad-c 5.8s ease-in-out 1.4s infinite;
+}
+
+.animate-float-d {
+  animation: float-salad-d 6.6s ease-in-out 2.1s infinite;
+}
+
+@keyframes float-badge {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-float-badge-1 {
+  animation: float-badge 4.5s ease-in-out infinite;
+}
+
+.animate-float-badge-2 {
+  animation: float-badge 5.2s ease-in-out 1s infinite;
+}
+
+.animate-float-badge-3 {
+  animation: float-badge 4.8s ease-in-out 2s infinite;
+}
+
+/* Scroll reveal for mobile and responsive devices */
+@keyframes mobile-scroll-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.food-card-reveal {
+  animation: mobile-scroll-reveal 0.65s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+/* Custom Styled Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4F8F3A;
+  border-radius: 9999px;
+  border: 2px solid #FFFDF5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #183D2B;
+}
+
+/* Smooth HTML scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
